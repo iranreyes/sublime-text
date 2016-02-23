@@ -1,0 +1,32 @@
+{
+	"auto_find_in_selection": true,
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
+	"caret_extra_width": 2,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"[project]/**/*.map",
+		"[project]/**/*.js",
+		"[project]/**/*.css"
+	],
+	"folder_exclude_patterns":
+	[
+		".tscache"
+	],
+	"font_size": 16,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		140
+	],
+	"theme": "Seti.sublime-theme",
+	"trim_trailing_white_space_on_save": true,
+	"typescript_plugin_tsc_version": "1.7.3"
+}

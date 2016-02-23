@@ -1,0 +1,17 @@
+[
+  {
+    "keys": [
+      "super+shift+l"
+    ],
+    "command": "reindent",
+    "args": {
+      "single_line": false
+    }
+  },
+  {
+    "keys": [
+      "ctrl+shift+r"
+    ],
+    "command": "reveal_in_side_bar"
+  }
+]
