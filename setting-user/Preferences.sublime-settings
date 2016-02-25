@@ -1,32 +1,59 @@
 {
-	"auto_find_in_selection": true,
-	"caret_extra_bottom": 3,
-	"caret_extra_top": 3,
-	"caret_extra_width": 2,
-	"file_exclude_patterns":
-	[
-		".DS_Store",
-		"[project]/**/*.map",
-		"[project]/**/*.js",
-		"[project]/**/*.css"
-	],
-	"folder_exclude_patterns":
-	[
-		".tscache"
-	],
+	// These settings control the size of the caret
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 1,
+
+  // folder_exclude_patterns and file_exclude_patterns control which files
+  // are listed in folders on the side bar. These can also be set on a per-
+  // project basis.
+	"folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
+	"file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
+
+  // These files will still show up in the side bar, but won't be included in
+  // Goto Anything or Find in Files
+	"binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+
 	"font_size": 16,
+
+	// If enabled, will highlight any line with a caret
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+
+	// Valid values are "system", "enabled" and "disabled"
 	"overlay_scroll_bars": "enabled",
+
+	// Columns in which to display vertical rulers
 	"rulers":
 	[
-		140
+		120
 	],
 	"theme": "Seti.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"typescript_plugin_tsc_version": "1.7.3"
+	"find_selected_text": true,
+
+	// Additional spacing at the bottom of each line, in pixels
+	"line_padding_bottom": 1,
+
+	// Additional spacing at the top of each line, in pixels
+	"line_padding_top": 1,
+
+  // By default, shift+tab will only unindent if the selection spans
+  // multiple lines. When pressing shift+tab at other times, it'll insert a
+  // tab character - this allows tabs to be inserted when tab_completion is
+  // enabled. Set this to true to make shift+tab always unindent, instead of
+  // inserting tabs.
+	"shift_tab_unindent": false,
+
+	// The number of spaces a tab is considered equal to
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+
+  // Adds whitespace up to the first open bracket when indenting. Requires
+  // auto_indent to be enabled.
+	"indent_to_bracket": true,
+
+  // Set to false to not highlight angle brackets. This only takes effect if
+  // match_brackets is true
+	"match_brackets_angle": true,
 }
